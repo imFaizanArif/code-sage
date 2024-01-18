@@ -36,9 +36,9 @@ const ProblemDescription = ({ fetchedProblems }: { fetchedProblems: any }) => {
                                 >
                                     {problemData?.difficulty}
                                 </div>
-                                <div className='rounded p-[3px] ml-4 text-lg transition-colors duration-200 text-green-s text-dark-green-s'>
+                                {/* <div className='rounded p-[3px] ml-4 text-lg transition-colors duration-200 text-green-s text-dark-green-s'>
                                     <BsCheck2Circle />
-                                </div>
+                                </div> */}
                             </div>
 
                             {/* Problem Statement(paragraphs) */}

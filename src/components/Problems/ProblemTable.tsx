@@ -50,12 +50,12 @@ export default function ProblemTable() {
               <td className="py-2 text-start">
                 <span className={`text-center inline-block rounded-[21px] bg-opacity-[.15] px-3 py-1.5 text-sm font-medium capitalize ${difficulyColor}`}>{problem?.difficulty}</span>
               </td>
-              <td className="py-2 text-center">
-                <span className={`text-center align-baseline inline-flex px-4 py-2 mr-auto items-center font-thin text-[.95rem] leading-none rounded-lg`}>
-                  {/* <FcCancel size={28} /> */}
-                  <MdVerified className="text-green-600" size={28} />
-                </span>
-              </td>
+              {/* <td className="py-2 text-center">
+                <span className={`text-center align-baseline inline-flex px-4 py-2 mr-auto items-center font-thin text-[.95rem] leading-none rounded-lg`}> */}
+              {/* <FcCancel size={28} /> */}
+              {/* <MdVerified className="text-green-600" size={28} /> */}
+              {/* </span> */}
+              {/* </td> */}
               <td className=" text-start">
                 <span className="font-thin text-light-inverse text-md/normal">
                   {problem?.solution ? (
