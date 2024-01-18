@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const CodeEditior = ({ fetchedProblems, setSuccess }: { fetchedProblems: any, setSuccess: any }) => {
     const problemId = Object.keys(fetchedProblems)[0];
     const problem = fetchedProblems[problemId];
-    let [userCode, setUserCode] = useState(problem.starterCode);
+    let [userCode, setUserCode] = useState(problem?.starterCode);
     console.log(fetchedProblems, "dfjkgkdfjkgjk");
     console.log(setSuccess, "dfjkgkdfjkgjk");
     // const handleSubmit = () => {
@@ -39,7 +39,7 @@ const CodeEditior = ({ fetchedProblems, setSuccess }: { fetchedProblems: any, se
 
     const handleSubmit = async () => {
         try {
-            userCode = userCode.slice(userCode.indexOf(problem.starterFunctionName));
+            userCode = userCode?.slice(userCode?.indexOf(problem?.starterFunctionName));
             const cb = new Function(`return ${userCode}`)();
             console.log(cb, "cb");
             const handler = problems[lastSegment as string].handlerFunction;
@@ -86,7 +86,7 @@ const CodeEditior = ({ fetchedProblems, setSuccess }: { fetchedProblems: any, se
     useEffect(() => {
         const code = localStorage.getItem(`code-${lastSegment}`);
         setUserCode(code ? JSON.parse(code) : problem?.starterCode);
-    }, [lastSegment, problem.starterCode]);
+    }, [lastSegment, problem?.starterCode]);
     return (
         <>
             <ToastContainer
