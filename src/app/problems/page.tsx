@@ -23,7 +23,7 @@ const Problems = () => {
                                                     <th className="pb-3 text-start min-w-[175px]">TITLE</th>
                                                     <th className="pb-3 text-start min-w-[100px]">CATEGORY</th>
                                                     <th className="pb-3 text-start min-w-[100px]">DIFFICULTY</th>
-                                                    <th className="pb-3 text-center min-w-[175px]">STATUS</th>
+                                                    {/* <th className="pb-3 text-center min-w-[175px]">STATUS</th> */}
                                                     <th className="pb-3 text-start min-w-[100px]">SOLUTION</th>
                                                 </tr>
                                             </thead>
