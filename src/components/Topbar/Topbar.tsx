@@ -39,7 +39,7 @@ const Topbar = () => {
                     <FaChevronLeft className={`text-primary`} />
                 </div>
                 <Link
-                    href='/'
+                    href='/problems'
                     className='flex items-center gap-2 font-medium max-w-[170px] text-primary cursor-pointer'
                 >
                     <div>
