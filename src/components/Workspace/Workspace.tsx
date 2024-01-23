@@ -61,7 +61,7 @@ const Workspace = ({ props }: any) => {
                 <Topbar />
                 {/* {finalProblems} */}
                 {success && <Confetti gravity={0.3} tweenDuration={4000} width={width - 1} height={height - 1} />}
-                < SplitPane className='!h-[90.1vh]' split="vertical" minSizes={1} collapse={true} >
+                < SplitPane className='!h-[90.1vh] ' split="vertical" minSizes={1} collapse={true} >
                     <ProblemDescription fetchedProblems={finalProblems} />
                     {/* <div>dskjflksdjf</div> */}
                     <CodeEditior fetchedProblems={finalProblems} setSuccess={setSuccess} />

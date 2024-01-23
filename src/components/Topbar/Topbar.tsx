@@ -29,7 +29,7 @@ const Topbar = () => {
     }
 
     return (
-        <div className="absolute z-50 top-4 left-[35rem]">
+        <div className="absolute z-50 top-6 left-[12rem] sm:top-6 sm:left-[12rem] md:top-6 md:left-[30rem] lg:top-4 lg:left-[35rem]">
 
             <div className='flex items-center gap-4 flex-1 justify-center'>
                 <div
@@ -45,7 +45,7 @@ const Topbar = () => {
                     <div>
                         <BsList className={`text-primary`} size={23} />
                     </div>
-                    <p className={`text-primary`}>Problem List</p>
+                    <p className={`text-primary text-sm sm:text-sm md:text-base`}>Problem List</p>
                 </Link>
                 <div
                     className='flex items-center justify-center rounded bg-dark-fill-3 hover:bg-dark-fill-2 h-8 w-8 cursor-pointer'
