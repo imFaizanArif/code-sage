@@ -29,7 +29,7 @@ const Topbar = () => {
     }
 
     return (
-        <div className="absolute z-50 top-6 left-[12rem] sm:top-6 sm:left-[12rem] md:top-6 md:left-[30rem] lg:top-4 lg:left-[35rem]">
+        <div className="absolute z-50 top-6 left-[12rem] sm:top-6 sm:left-[10rem] md:top-6 md:left-[30rem] lg:top-4 lg:left-[35rem]">
 
             <div className='flex items-center gap-4 flex-1 justify-center'>
                 <div
